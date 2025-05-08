@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InternPe Task 2 - ECommerce</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo">ShopEase - InternPe</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#men">Men</a></li>
+          <li><a href="#women">Women</a></li>
+          <li><a href="#kids">Kids</a></li>
+          <li><a href="#electronics">Electronics</a></li>
+          <li><a href="#home-decor">Home & Decor</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+          🛒
+          <span class="cart-count">0</span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <h1>Welcome to ShopEase - InternPe</h1>
+      <p>
+        Discover amazing products at unbeatable prices. Shop now and get
+        exclusive deals!
+      </p>
+      <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products-grid"></div>
+    </section>
+    <!-- Men's Section -->
+    <section class="products" id="men">
+      <h2 class="section-title">Men's Collection</h2>
+      <div class="products-grid men-products"></div>
+    </section>
+
+    <!-- Women's Section -->
+    <section class="products" id="women">
+      <h2 class="section-title">Women's Collection</h2>
+      <div class="products-grid women-products"></div>
+    </section>
+
+    <!-- Kids' Section -->
+    <section class="products" id="kids">
+      <h2 class="section-title">Kids' Collection</h2>
+      <div class="products-grid kids-products"></div>
+    </section>
+
+    <!-- Electronics Section -->
+    <section class="products" id="electronics">
+      <h2 class="section-title">Electronics</h2>
+      <div class="products-grid electronics-products"></div>
+    </section>
+
+    <!-- Home & Decor Section -->
+    <section class="products" id="home-decor">
+      <h2 class="section-title">Home Furniture & Decor</h2>
+      <div class="products-grid home-decor-products"></div>
+    </section>
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3 class="cart-title">Your Cart</h3>
+        <button class="close-cart">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-amount">₹0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About ShopEase</h2>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Your One-Stop Tech Shop</h3>
+            <p>
+              Founded in 2025, ShopEase has grown from a small startup to one of
+              the most trusted names in electronics and tech accessories. We
+              pride ourselves on offering carefully curated products that
+              combine quality, innovation, and value.
+            </p>
+
+            <h3>Our Mission</h3>
+            <p>
+              To provide tech enthusiasts with high-quality products while
+              delivering an exceptional shopping experience through outstanding
+              customer service and competitive prices.
+            </p>
+
+            <div class="stats-container">
+              <div class="stat-item">
+                <span class="stat-number">50K+</span>
+                <span class="stat-label">Happy Customers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Products</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Support</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-section">
+            <h3>Our Team</h3>
+            <div class="team-grid">
+              <div class="team-member">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D5603AQED5QT_WW5hww/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728064003209?e=1745452800&v=beta&t=uMdOJwZj90VZhxCk9zFSY4YMJSXNmoryi_q0n_8tngQ"
+                  alt="MukundKumar G"
+                />
+                <h4>MukundKumar G</h4>
+                <p>Founder & CEO</p>
+              </div>
+              <div class="team-member">
+                <img src="./MRahul.jpeg" alt="M Rahul" />
+                <h4>M Rahul</h4>
+                <p>Head of Operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="icon">📍</div>
+              <h3>Address</h3>
+              <p>Jaipur - Rajasthan - India</p>
+            </div>
+            <div class="info-card">
+              <div class="icon">📞</div>
+              <h3>Phone</h3>
+              <p>+91 (080) 123-4567</p>
+              <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="info-card">
+              <div class="icon">✉️</div>
+              <h3>Email</h3>
+              <p>Hr@internPe.in</p>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="billing">Billing Question</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --background: #ffffff;
+        --text-secondary: #64748b;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Orbitron", Arial, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--background);
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          var(--text-secondary) 1px,
+          transparent 0
+        );
+        background-size: 40px 40px;
+        transition: all 0.3s ease; /*while switching to the dark-white mode */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="perviousOperand"></div>
+        <div class="currentOperand">0</div>
+      </div>
+      <div class="buttons">
+        <button class="clear">AC</button>
+        <button class="delete">DEL</button>
+        <button class="operator">%</button>
+        <button class="operator">÷</button>
+        <button class="operand">7</button>
+        <button class="operand">8</button>
+        <button class="operand">9</button>
+        <button class="operator">x</button>
+        <button class="operand">4</button>
+        <button class="operand">5</button>
+        <button class="operand">6</button>
+        <button class="operator">-</button>
+        <button class="operand">1</button>
+        <button class="operand">2</button>
+        <button class="operand">3</button>
+        <button class="operator">+</button>
+        <button class="operand">0</button>
+        <button class="operand">.</button>
+        <button class="operator">=</button>
+      </div>
+    </div>
+  </body>
+</html>
