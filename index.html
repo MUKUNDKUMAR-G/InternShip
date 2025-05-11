@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Internsip Project Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .project-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+            background-size: 200% 200%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen custom-scrollbar">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-white text-2xl font-bold">Portfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#projects" class="nav-link text-white">Projects</a>
+                    <a href="#about" class="nav-link text-white">About</a>
+                    <a href="#contact" class="nav-link text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white pt-32 pb-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up"> InternshipProject Showcase</h1>
+            <p class="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                A collection of innovative web development projects showcasing modern technologies and creative solutions
+            </p>
+            <div class="mt-10" data-aos="fade-up" data-aos-delay="400">
+                <a href="#projects" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 inline-flex items-center">
+                    Explore Projects <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main id="projects" class="container mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Calculator Project -->
+            <div class="project-card rounded-xl p-8" data-aos="fade-up">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-calculator text-3xl text-purple-600 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">Calculator</h2>
+                </div>
+                <p class="text-gray-600 mb-6">A modern calculator application with advanced arithmetic operations and sleek interface.</p>
+                <div class="flex space-x-4">
+                    <a href="Task 1 - Calculator/index.html" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="https://github.com/MUKUNDKUMAR-G/InternShip/tree/main/Task%201%20-%20Calculator" class="text-purple-600 hover:text-purple-700 transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ECommerce Project -->
+            <div class="project-card rounded-xl p-8" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-shopping-cart text-3xl text-purple-600 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">E-Commerce</h2>
+                </div>
+                <p class="text-gray-600 mb-6">An immersive shopping experience with dynamic product listings and seamless cart management.</p>
+                <div class="flex space-x-4">
+                    <a href="Task 2 - ECommerce/index.html" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="https://github.com/MUKUNDKUMAR-G/InternShip/tree/main/Task%202%20-%20ECommerce" class="text-purple-600 hover:text-purple-700 transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- TO-DO List Project -->
+            <div class="project-card rounded-xl p-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-tasks text-3xl text-purple-600 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">TO-DO List</h2>
+                </div>
+                <p class="text-gray-600 mb-6">A powerful task management tool with intuitive interface and smart organization features.</p>
+                <div class="flex space-x-4">
+                    <a href="Task 3 - TO-DO_List/index.html" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="https://github.com/MUKUNDKUMAR-G/InternShip/tree/main/Task%203%20-%20TO-DO_List" class="text-purple-600 hover:text-purple-700 transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Four Player Game Project -->
+            <div class="project-card rounded-xl p-8" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-gamepad text-3xl text-purple-600 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">Four Player Game</h2>
+                </div>
+                <p class="text-gray-600 mb-6">An engaging multiplayer gaming experience with real-time interaction and dynamic gameplay.</p>
+                <div class="flex space-x-4">
+                    <a href="Task 4 - Four_Player_Game/index.html" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="https://github.com/MUKUNDKUMAR-G/InternShip/tree/main/Task%204%20-%20Four_Player_Game" class="text-purple-600 hover:text-purple-700 transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-3xl font-bold mb-6">Let's Connect</h3>
+                    <p class="text-gray-400 mb-8">Feel free to reach out for collaborations or just a friendly hello</p>
+                    <div class="flex space-x-6">
+                        <a href="https://github.com/MUKUNDKUMAR-G" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mukundkumar-g/" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://x.com/MukundK3146" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-purple-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-purple-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-purple-500 focus:outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 
